@@ -7,18 +7,16 @@ function proponerMatrimonio(respuesta) {
 }
 
 var fotos = [
-    'https://photos.app.goo.gl/tg8rWSsBT5JMDagn6',
-    'https://photos.app.goo.gl/BHHQdsPQxi8oGnsYA',
-    'https://photos.app.goo.gl/N4uwyG5ZxSwEXfSQ9',
-    "https://photos.app.goo.gl/RFEf5RyESCQed5ms5",
-    "https://photos.app.goo.gl/qHXjNEuuSZvCYL1S8",
-    "https://photos.app.goo.gl/Sku7EYBYZHqKHnyk8",
-    "https://photos.app.goo.gl/7VzdANCiJcwuHEdM9",
-    "https://photos.app.goo.gl/KaimxmDw7xrfTfgP9",
-    "https://photos.app.goo.gl/6Ks9fgik7XJDBGZVA",
-    "https://photos.app.goo.gl/StKjTXyQduZHoAgLA",
-    "https://photos.app.goo.gl/sSMSb72MpjXUkqew7"
-
+    './fotos/01.jpg',
+    './fotos/02.jpg',
+    './fotos/03.jpg',
+    './fotos/04.jpg',
+    './fotos/05.jpg',
+    './fotos/06.jpg',
+    './fotos/07.JPG',
+    './fotos/08.JPG',
+    './fotos/09.jpg',
+    './fotos/10.HEIC'
 ];
 
 var indiceFotoActual = 0;
