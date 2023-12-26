@@ -7,16 +7,15 @@ function proponerMatrimonio(respuesta) {
 }
 
 var fotos = [
-    './fotos/01.jpg',
-    './fotos/02.jpg',
-    './fotos/03.jpg',
-    './fotos/04.jpg',
-    './fotos/05.jpg',
-    './fotos/06.jpg',
-    './fotos/07.JPG',
-    './fotos/08.JPG',
-    './fotos/09.jpg',
-    './fotos/10.HEIC'
+    '02.jpg',
+    '03.jpg',
+    '04.jpg',
+    '05.jpg',
+    '06.jpg',
+    '07.jpg',
+    '08.jpg',
+    '09.jpg',
+    '10.jpg',
 ];
 
 var indiceFotoActual = 0;
@@ -31,9 +30,53 @@ function mostrarFotoAnterior() {
     actualizarFoto();
 }
 
+// Elimina la primera definición de la función actualizarFoto()
 function actualizarFoto() {
     var fotoElement = document.getElementById('foto-principal');
-    fotoElement.src = fotos[indiceFotoActual];
+    fadeOut(fotoElement); // Desvanece la imagen actual
+    setTimeout(function () {
+        fotoElement.src = fotos[indiceFotoActual];
+        fadeIn(fotoElement); // Muestra la nueva imagen
+    }, 500); // Espera 500ms antes de mostrar la nueva imagen
 }
 
 actualizarFoto();
+
+// Añade estas funciones para manejar las animaciones
+function fadeIn(element) {
+    element.style.opacity = '1';
+}
+
+function fadeOut(element) {
+    element.style.opacity = '0';
+}
+
+// Modifica la función actualizarFoto() para incluir animaciones
+function actualizarFoto() {
+    var fotoElement = document.getElementById('foto-principal');
+    fadeOut(fotoElement); // Desvanece la imagen actual
+    setTimeout(function () {
+        fotoElement.src = fotos[indiceFotoActual];
+        fadeIn(fotoElement); // Muestra la nueva imagen
+    }, 500); // Espera 500ms antes de mostrar la nueva imagen
+}
+
+// Añade estas funciones para manejar las animaciones del mensaje
+function mostrarMensaje() {
+    var mensajeElement = document.getElementById('message-section');
+    fadeIn(mensajeElement);
+}
+
+function ocultarMensaje() {
+    var mensajeElement = document.getElementById('message-section');
+    fadeOut(mensajeElement);
+}
+
+// Modifica las funciones proponerMatrimonio() para incluir animaciones
+function proponerMatrimonio(respuesta) {
+    ocultarMensaje(); // Oculta el mensaje actual antes de mostrar la respuesta
+    setTimeout(function () {
+        alert('¡Respuesta: ' + respuesta + '!'); // Muestra una alerta como ejemplo
+        mostrarMensaje(); // Muestra el mensaje nuevamente para futuras propuestas
+    }, 500); // Espera 500ms antes de mostrar la alerta
+}

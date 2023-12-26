@@ -1,3 +1,4 @@
+/* Estilos generales para la página de propuesta de matrimonio */
 body {
     font-family: 'Arial', sans-serif;
     text-align: center;
@@ -13,6 +14,23 @@ header {
 }
 
 #message-section {
-    /* Agrega estilos para la sección del mensaje */
     margin-top: 20px;
+    opacity: 0;
+        /* Inicialmente, el mensaje estará oculto */
+        transition: opacity 0.5s ease-in-out;
+        /* Agrega una transición de opacidad */
+    }
+    
+    /* Estilos opcionales para el contenedor de la imagen */
+    #contenedor-imagen {
+        max-width: 800px;
+        margin: 20px auto;
+    }
+    
+    #foto-principal {
+        width: 100%;
+        height: auto;
+        border: 1px solid #ccc;
+        transition: opacity 0.5s ease-in-out;
+        /* Agrega una transición de opacidad */
 }
