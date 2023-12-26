@@ -6,7 +6,6 @@ function proponerMatrimonio(respuesta) {
     }
 }
 
-// Lista de enlaces directos a las fotos en orden
 var fotos = [
     'https://photos.app.goo.gl/tg8rWSsBT5JMDagn6',
     'https://photos.app.goo.gl/BHHQdsPQxi8oGnsYA',
