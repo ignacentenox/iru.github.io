@@ -20,10 +20,11 @@ header h1 {
     background-color: #323232cc;
     border-radius: 10px;
 }
-#fondo {
+#contenedor-imagen {
+    position: relative;
+    width: 100vw;
     height: 100vh;
     overflow: hidden;
-    position: relative;
 }
 
 #video-background {
@@ -37,24 +38,37 @@ header h1 {
     }
     
     #message-section {
-        position: relative;
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         z-index: 1;
         padding: 20px;
         margin: 20px;
         background-color: rgba(255, 255, 255, 0.8);
         border-radius: 10px;
-        margin-top: 50px;
-    }
-    
-    #corazon {
-        display: none;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 100px;
-        color: red;
-        z-index: 2;
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
+}
+
+#corazon {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: red;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+#cartel-final {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
 }
