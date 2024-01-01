@@ -4,29 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>04/01/20</title>
+    <title>04/01/2020</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-        <h1>Te amo...</h1>
+        <h1>Felices 4 Años, Te amo...</h1>
     </header>
 
-    <!-- Contenedor de la imagen principal -->
+    <div id="fondo"></div>
+
     <div id="contenedor-imagen">
-        <img id="foto-principal" src="01.jpg" alt="Nuestra Primera Foto ❤️">
+        <video id="video-background" src="FOTOS.mp4" autoplay loop muted></video>
     </div>
-    <!-- Botones para navegar entre fotos -->
-    <button onclick="mostrarFotoAnterior()">Anterior</button>
-    <button onclick="mostrarSiguienteFoto()">Siguiente</button>
 
     <section id="message-section">
-        <!-- Agrega aquí tu mensaje y formulario de propuesta -->
-        <p>¡Hola Amor! ¿Me gustaría saber si... Queres volver a intentarlo conmigo?</p>
+        <p>Si... Ya lo pensé varias veces ¿Me gustaría saber si... Podemos volver a intentarlo?</p>
         <button onclick="proponerMatrimonio('Si')">¡Sí, Quiero!</button>
         <button onclick="proponerMatrimonio('No')">¡No, Gracias!</button>
     </section>
+
+    <div id="corazon">❤️</div>
 
     <script src="script.js"></script>
 </body>
