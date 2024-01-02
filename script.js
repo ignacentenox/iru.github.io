@@ -7,12 +7,12 @@ function proponerMatrimonio(respuesta) {
 }
 
 function mostrarPropuesta() {
-    alert('¡Gracias por aceptar! ¡Te amo!');
+    alert('Respuesta Si: Prometo dar lo mejor de mí para que esto funcione. ¡Te amo!');
     ocultarCartel();
 }
 
 function rechazarPropuesta() {
-    alert('¡No hay problema! Seguimos siendo geniales juntos.');
+    alert('Respuesta No: Tranquila, más adelante se nos dará. Te sigo amando como el primer día <3');
     ocultarCartel();
 }
 
@@ -53,7 +53,3 @@ var video = document.getElementById('video-background');
 video.addEventListener('ended', function () {
     mostrarCartel();
 });
-
-window.onload = function () {
-    mostrarMensaje();
-};
