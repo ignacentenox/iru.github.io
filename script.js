@@ -7,12 +7,12 @@ function proponerMatrimonio(respuesta) {
 }
 
 function mostrarPropuesta() {
-    alert('Respuesta Si: Prometo dar lo mejor de mí para que esto funcione. ¡Te amo!');
+    alert('Respuesta Si: Prometo dar lo mejor de mí para que esto funcione. ❤️ ¡Te amo!');
     ocultarCartel();
 }
 
 function rechazarPropuesta() {
-    alert('Respuesta No: Tranquila, más adelante se nos dará. Te sigo amando como el primer día <3');
+    alert('Respuesta No: Tranquila, más adelante se nos dará. Te sigo amando como el primer día ❤️');
     ocultarCartel();
 }
 
